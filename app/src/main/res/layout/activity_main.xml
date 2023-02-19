@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"
+            android:id="@+id/imgButtonCall"
+            android:onClick="call"
+            />
+
+        <EditText
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCallNumber"
+            android:hint="Entrez numéro..."
+            android:inputType="phone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/screen"
+            android:id="@+id/imgButtonLogin"
+            android:onClick="openLogin"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/netscape"
+            android:id="@+id/imgButtonBrowser"
+            android:onClick="openBrowser"/>
+
+        <EditText
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:hint="Entrez url..."
+            android:inputType="textUri"
+            android:id="@+id/editTextUrl"/>
+    </LinearLayout>
+
+</LinearLayout>
